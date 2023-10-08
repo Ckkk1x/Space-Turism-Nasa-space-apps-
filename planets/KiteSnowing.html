@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Principal</title>
+	<link rel="icon" href="../img/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/planetKiteSnow.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/user.js"></script>
+</head>
+<body>
+	<header>
+		<img id="logo" src="../img/logo.png" onclick="window.location.href = '../principal.html'">
+		<h1 id="logo-text">AstroSpacelines</h1>
+		<div class="user-dropdown">
+			<img id="profile" src="../img/profile.png">
+			<div id="dropdown-content" class="dropdown-content">
+				<a href="#">Profile</a>
+				<a href="#">My itinerary</a>
+				<a href="#">Log out</a>
+			</div>
+		</div>
+		<div class="log-in">
+			<a id="log-in" onclick="showPopUpLogIn()">Log in</a>
+			or
+			<a id="sign-up" onclick="showPopUpSignUp()">Sign up</a>
+		</div>
+	</header>
+
+	<div class="banner" style="background-image: url('../img/neptune/activities/Gradas-IA.jpg');">
+        <h1>KITESNOWING</h1>
+	</div>
+	<div class="txt">
+		<div class="par">
+            <h1>EXPERIENCE THE VIEW OF KITESNOWING RACE IN NEPTUNE</h1>
+            <p>
+                Winds up to 2100 km/h<br>
+					-201ºC of average Temp<br>
+					Reduced Visibility<br>
+					Hidden obstacles<br>
+					More Surprises<br>
+					
+            </p>
+        </div>
+		<img class="foto" src="../img/neptune/activities/KiteSnow in IA2.jfif">
+	</div>
+
+	<div class="actividades">
+		<h2>Choose your option</h2>
+		<div class="actividades-grid">
+
+			<div class="actividades-grid-item">
+				<h3>WATCH THE SPECTACLE FROM A COMFORTABLE PLACE</h3>
+                <p3>Do you like extreme competitions but would never do them yourself? Try the comfort of the adapted terraces where temperature and
+					 climate are controlled and enjoy the locally cooked gastronomy, innovatively cooked in the helium+hydrogen atmosphere.
+                </p3>
+				<button onclick="añadir(1)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<h3>TRY IT YOURSELF</h3>
+                <p3>Searching for some adrenalin? You will have to choose your level of craziness as there are 5 places to enjoy the Kitesnow sport, 
+					each one at different latitudes with different wind speed. Starting from 200 km/h up to 1800 km/h, you choose!<br><br>
+                </p3>
+				<button onclick="añadir(1)">+</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

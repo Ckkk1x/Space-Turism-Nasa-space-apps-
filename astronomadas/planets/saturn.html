@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Principal</title>
+	<link rel="icon" href="../img/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/planet.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/user.js"></script>
+</head>
+<body>
+	<header>
+		<img id="logo" src="../img/logo.png" onclick="window.location.href = '../principal.html'">
+		<h1 id="logo-text">AstroSpacelines</h1>
+		<div class="user-dropdown">
+			<img id="profile" src="../img/profile.png">
+			<div id="dropdown-content" class="dropdown-content">
+				<a href="#">Profile</a>
+				<a href="#">My itinerary</a>
+				<a href="#">Log out</a>
+			</div>
+		</div>
+		<div class="log-in">
+			<a id="log-in" onclick="showPopUpLogIn()">Log in</a>
+			or
+			<a id="sign-up" onclick="showPopUpSignUp()">Sign up</a>
+		</div>
+	</header>
+
+	<div class="banner" style="background-image: url('../img/saturn/banner.jpg');">
+	</div>
+
+	<div class="txt">
+		<h1>Saturn</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget 
+			ultricies ultrices, nunc nisl aliquam nunc, vitae aliqua magna magna vitae nunc.
+			Aliquam erat volutpat. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+			Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+			Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+			Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+		</p>
+		<img class="foto" src="../img/saturn/banner.jpg">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget 
+			ultricies ultrices, nunc nisl aliquam nunc, vitae aliqua magna magna vitae nunc.
+			Aliquam erat volutpat. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+			Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+			Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+			Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+		</p>
+	</div>
+
+	<div class="actividades">
+		<h2>Actividades</h2>
+		<div class="actividades-grid">
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 1</h3>
+				<button onclick="añadir(1)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 2</h3>
+				<button onclick="añadir(2)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 3</h3>
+				<button onclick="añadir(3)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 4</h3>
+				<button onclick="añadir(4)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 5</h3>
+				<button onclick="añadir(5)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 6</h3>
+				<button onclick="añadir(6)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 7</h3>
+				<button onclick="añadir(7)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 8</h3>
+				<button onclick="añadir(8)">+</button>
+			</div>
+
+			<div class="actividades-grid-item">
+				<div class="foto" style="background-image: url('../img/saturn/banner.jpg');"></div>
+				<h3>Actividad 9</h3>
+				<button onclick="añadir(9)">+</button>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+body{
+	margin: 0!important;
+}
+
+.banner{
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.txt{
+	padding: 60px 300px;
+}
+
+h1{
+	color: #4617ab;
+	font-size: 40px;
+}
+
+p{
+	color: #222;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: justify;
+	margin: 20px 0;
+}
+
+.par{
+	padding: 10px 0px;
+}
+
+
+.par p{
+	color: #000000;
+	font-size: 25px;
+	line-height: 50px;
+	width: 850px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.banner h1{
+	padding-top: 350px;
+	padding-left: 1000px;
+	color: #cee7ea;
+	font-size: 50px;
+	text-align: justify;
+}
+
+.par h1{
+	color: #000000;
+	font-size: 30px;
+	text-align: center;
+}
+
+.foto{
+	width: 100%;
+	margin: 20px 0;
+}
+
+.actividades{
+	padding: 60px 300px;
+	background-color: #134e6a;
+}
+
+h2{
+	color: #fff;
+	font-size: 40px;
+}
+
+.actividades-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+}
+
+.actividades-grid-item{
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: scale .3s ease;
+}
+
+.actividades-grid-item:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	scale: 1.05;
+}
+
+.actividades-grid-item .foto{
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	margin-top: 0!important;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.actividades-grid-item h3{
+	color: #222;
+	font-size: 20px;
+	margin: 10px 0;
+	display: flex;
+}
+
+.actividades-grid-item p3{
+	color: #222;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: justify;
+	margin: 20px 0;
+	height: 1000px;
+}
+
+.actividades-grid-item button{
+	display: flex;
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+	background-color: #134e6a;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	padding: 10px 200px;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	transition: background-color .3s ease;
+}
+
+.actividades-grid-item button:hover{
+	background-color:  #4cafdd;
+}
+
+.log-in a{
+	color: #003764!important;
+}

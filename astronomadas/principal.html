@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Principal</title>
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/user.js"></script>
+</head>
+<body>
+		<img id="logo" src="img/logo.png">
+		<h1 id="logo-text">AstroSpacelines</h1>
+		<div class="user-dropdown">
+			<img id="profile" src="img/profile.png">
+			<div id="dropdown-content" class="dropdown-content">
+				<a href="#">Profile</a>
+				<a href="#">My itinerary</a>
+				<a onclick="logOut()">Log out</a>
+			</div>
+		</div>
+		<div class="log-in">
+			<a id="log-in" onclick="showPopUpLogIn()">Log in</a>
+			or
+			<a id="sign-up" onclick="showPopUpSignUp()">Sign up</a>
+		</div>
+
+		<div id="stars-bg"> </div>
+
+		<div id="solar-sys">
+			<div class="planet" id="sun"></div>
+
+			<div class="orbit" id="neptune-orbit">
+				<div class="planet" id="neptune"></div>
+			</div>
+
+			<div class="orbit" id="uranus-orbit">
+				<div class="planet" id="uranus"></div>
+			</div>
+
+			<div class="orbit" id="saturn-orbit">
+				<div class="planet" id="saturn"></div>
+			</div>
+
+			<div class="orbit" id="jupiter-orbit">
+				<div class="planet" id="jupiter"></div>
+			</div>
+
+			<div class="orbit" id="mars-orbit">
+				<div class="planet" id="mars"></div>
+			</div>
+
+			<div class="orbit" id="earth-orbit">
+				<div class="planet" id="earth"></div>
+			</div>
+
+			<div class="orbit" id="venus-orbit">
+				<div class="planet" id="venus"></div>
+			</div>
+
+			<div class="orbit" id="mercury-orbit">
+				<div class="planet" id="mercury"></div>
+			</div>
+		</div>
+
+		<div class="popup" id="log-in-popup">
+			<h1>Log in</h1>
+			<form action="php/login.php" method="post">
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="submit" value="Log in">
+			</form>
+		</div>
+
+		<div class="popup" id="sign-up-popup">
+			<h1>Sign up</h1>
+			<form action="php/login.php" method="post">
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="submit" value="Sign up">
+			</form>
+		</div>
+</body>
+</html>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		putStars();
+
+		document.getElementById("neptune").addEventListener("click", function () {
+			window.location.href = "planets/neptune.html";
+		});
+		
+		document.getElementById("saturn").addEventListener("click", function () {
+			window.location.href = "planets/saturn.html";
+		});
+	});
+
+	var planets = [{
+			id: document.getElementById("mercury"),
+			distance: 60,
+			angle: 60,
+			size: 36
+		},{
+			id: document.getElementById("venus"),
+			distance: 90,
+			angle: 60,
+			size: 38
+		},{
+			id: document.getElementById("earth"),
+			distance: 120,
+			angle: 60,
+			size: 44
+		},{
+			id: document.getElementById("mars"),
+			distance: 150,
+			angle: 60,
+			size: 48
+		},{
+			id: document.getElementById("jupiter"),
+			distance: 190,
+			angle: 60,
+			size: 78
+		},{
+			id: document.getElementById("saturn"),
+			distance: 230,
+			angle: 60,
+			size: 60
+		},{
+			id: document.getElementById("uranus"),
+			distance: 260,
+			angle: 60,
+			size: 44
+		},{
+			id: document.getElementById("neptune"),
+			distance: 290,
+			angle: 60,
+			size: 58
+		}];
+
+	function putStars(){
+		var stars_bg = document.getElementById("stars-bg");
+
+		for (var i = 0; i < 150; i++) {
+			stars_bg.innerHTML += "<div class='star'></div>";
+		}
+
+		var stars = document.getElementsByClassName("star");
+
+		for (var i = 0; i < stars.length; i++) {
+			stars[i].style.left = Math.floor(Math.random() * 99) + "%";
+			stars[i].style.top = Math.floor(Math.random() * 99) + "%";
+			var size = Math.floor(Math.random() * 4)
+			stars[i].style.height = size + "px";
+			stars[i].style.width = size + "px";
+			var anim = Math.floor(Math.random() * 6);
+			if (anim < 3)
+				anim += 3;
+			stars[i].style.animation = "fadeInOut " + anim + "s linear infinite";
+		}
+	}
+</script>

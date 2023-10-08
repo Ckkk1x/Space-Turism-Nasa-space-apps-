@@ -1,0 +1,103 @@
+body{
+	margin: 0!important;
+}
+
+.banner{
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.txt{
+	padding: 60px 300px;
+}
+
+h1{
+	color: #f8a800;
+	font-size: 40px;
+}
+
+p{
+	color: #222;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: justify;
+	margin: 20px 0;
+}
+
+.foto{
+	width: 100%;
+	margin: 20px 0;
+}
+
+.actividades{
+	padding: 60px 300px;
+	background-color: #f8a800;
+}
+
+h2{
+	color: #fff;
+	font-size: 40px;
+}
+
+.actividades-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.actividades-grid-item{
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: scale .3s ease;
+}
+
+.actividades-grid-item:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	scale: 1.05;
+}
+
+.actividades-grid-item .foto{
+	width: 100%;
+	height: 150px;
+	border-radius: 10px;
+	margin-top: 0!important;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.actividades-grid-item h3{
+	color: #222;
+	font-size: 20px;
+	margin: 10px 0;
+	display: flex;
+}
+
+.actividades-grid-item button{
+	display: flex;
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+	background-color: #f8a800;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	padding: 10px 100px;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	transition: background-color .3s ease;
+}
+
+.actividades-grid-item button:hover{
+	background-color: #ce8d00;
+}
+
+.log-in a{
+	color: #003764!important;
+}

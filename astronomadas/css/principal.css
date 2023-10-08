@@ -1,0 +1,225 @@
+body{
+	--mercury: 36px;
+	--venus: 38px;
+	--earth: 48px;
+	--mars: 44px;
+	--jupiter: 78px;
+	--saturn: 90px;
+	--uranus: 44px;
+	--neptune: 58px;
+
+	--mercury-orbit: 150px;
+	--venus-orbit: 200px;
+	--earth-orbit: 250px;
+	--mars-orbit: 300px;
+	--jupiter-orbit: 350px;
+	--saturn-orbit: 400px;
+	--uranus-orbit: 450px;
+	--neptune-orbit: 500px;
+
+	--mercury-speed: 250s;
+	--venus-speed: 260s;
+	--earth-speed: 270s;
+	--mars-speed: 280s;
+	--jupiter-speed: 290s;
+	--saturn-speed: 300s;
+	--uranus-speed: 310s;
+	--neptune-speed: 320s;
+
+	background-color: #070d24;
+}
+
+#logo{
+	margin-top: 10px;
+}
+
+.star{
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.planet{
+	background-size: cover;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	margin-left: 50%;
+	cursor: pointer;
+}
+
+.planet:hover{
+	scale: 1.25;
+	transform: translate(-40%, -40%);
+}
+
+.orbit{
+	position: absolute;
+	border: 1px solid #bbbbbb;
+	border-radius: 50%;
+}
+
+@keyframes Rotation {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#sun{
+	background-image: url(../img/planets/sun.png);
+	top: 50%;
+	left: 50%;
+	height: 80px;
+	width: 80px;
+	margin-left: 0;
+}
+
+#mercury{
+	background-image: url(../img/planets/mercury.png);
+	width: var(--mercury);
+	height: var(--mercury);
+}
+
+#mercury-orbit{
+	width: var(--mercury-orbit);
+	height: var(--mercury-orbit);
+	top: calc(50% - var(--mercury-orbit) / 2);
+	left: calc(50% - var(--mercury-orbit) / 2);
+	rotate: 280deg;
+	animation: Rotation var(--mercury-speed) linear infinite;
+}
+
+#venus{
+	background-image: url(../img/planets/venus.png);
+	width: var(--venus);
+	height: var(--venus);
+}
+
+#venus-orbit{
+	width: var(--venus-orbit);
+	height: var(--venus-orbit);
+	top: calc(50% - var(--venus-orbit) / 2);
+	left: calc(50% - var(--venus-orbit) / 2);
+	rotate: 55deg;
+	animation: Rotation var(--venus-speed) linear infinite;
+}
+
+#earth{
+	background-image: url(../img/planets/earth.png);
+	width: var(--earth);
+	height: var(--earth);
+}
+
+#earth-orbit{
+	width: var(--earth-orbit);
+	height: var(--earth-orbit);
+	top: calc(50% - var(--earth-orbit) / 2);
+	left: calc(50% - var(--earth-orbit) / 2);
+	rotate: 0deg;
+	animation: Rotation var(--earth-speed) linear infinite;
+}
+
+#mars{
+	background-image: url(../img/planets/mars.png);
+	width: var(--mars);
+	height: var(--mars);
+}
+
+#mars-orbit{
+	width: var(--mars-orbit);
+	height: var(--mars-orbit);
+	top: calc(50% - var(--mars-orbit) / 2);
+	left: calc(50% - var(--mars-orbit) / 2);
+	rotate: 110deg;
+	animation: Rotation var(--mars-speed) linear infinite;
+}
+
+#jupiter{
+	background-image: url(../img/planets/jupiter.png);
+	width: var(--jupiter);
+	height: var(--jupiter);
+}
+
+#jupiter-orbit{
+	width: var(--jupiter-orbit);
+	height: var(--jupiter-orbit);
+	top: calc(50% - var(--jupiter-orbit) / 2);
+	left: calc(50% - var(--jupiter-orbit) / 2);
+	rotate: 170deg;
+	animation: Rotation var(--jupiter-speed) linear infinite;
+}
+
+#saturn{
+	background-image: url(../img/planets/saturn.png);
+	width: var(--saturn);
+	height: var(--saturn);
+}
+
+#saturn-orbit{
+	width: var(--saturn-orbit);
+	height: var(--saturn-orbit);
+	top: calc(50% - var(--saturn-orbit) / 2);
+	left: calc(50% - var(--saturn-orbit) / 2);
+	rotate: 45deg;
+	animation: Rotation var(--saturn-speed) linear infinite;
+}
+
+#uranus{
+	background-image: url(../img/planets/uranus.png);
+	width: var(--uranus);
+	height: var(--uranus);
+}
+
+#uranus-orbit{
+	width: var(--uranus-orbit);
+	height: var(--uranus-orbit);
+	top: calc(50% - var(--uranus-orbit) / 2);
+	left: calc(50% - var(--uranus-orbit) / 2);
+	rotate: 280deg;
+	animation: Rotation var(--uranus-speed) linear infinite;
+}
+
+#neptune{
+	background-image: url(../img/planets/neptune.png);
+	width: var(--neptune);
+	height: var(--neptune);
+}
+
+#neptune-orbit{
+	width: var(--neptune-orbit);
+	height: var(--neptune-orbit);
+	top: calc(50% - var(--neptune-orbit) / 2);
+	left: calc(50% - var(--neptune-orbit) / 2);
+	rotate: 230deg;
+	animation: Rotation var(--neptune-speed) linear infinite;
+}
+
+.popup{
+	display: none;
+	width: 600px;
+	height: 400px;
+	background-color: #ffffff;
+	border-radius: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#log-in-popup{
+	display: none!important;
+}

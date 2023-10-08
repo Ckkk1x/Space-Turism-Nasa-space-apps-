@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Principal</title>
+	<link rel="icon" href="../img/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/planetMars.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/user.js"></script>
+</head>
+<body>
+	<header>
+		<img id="logo" src="../img/logo.png" onclick="window.location.href = '../principal.html'">
+		<h1 id="logo-text">AstroSpacelines</h1>
+		<div class="user-dropdown">
+			<img id="profile" src="../img/profile.png">
+			<div id="dropdown-content" class="dropdown-content">
+				<a href="#">Profile</a>
+				<a href="#">My itinerary</a>
+				<a href="#">Log out</a>
+			</div>
+		</div>
+		<div class="log-in">
+			<a id="log-in" onclick="showPopUpLogIn()">Log in</a>
+			or
+			<a id="sign-up" onclick="showPopUpSignUp()">Sign up</a>
+		</div>
+	</header>
+
+	<div class="banner" style="background-image: url('../img/mars/mars.jpg');">
+        <h1>MARS</h1>
+	</div>
+	<div class="txt">
+		<h1>THE RED PLANET</h1>
+		<p>
+			It has a variety of locations. From huge volcanoes, deep canyons to huge craters. 
+			It is an amazing location for tourists to explore, here are some of those 
+			locations that future Martians could visit. Starting the rocky fields where can be done all
+			 extremal activities start from the <b>motorcycling</b> or high speed racing competition, even <b>skiing</b> 
+			 from the mountains near the north and south poles and to the <b>flying</b> around the mars and exploring 
+			 wide range of views from the space.
+		</p>
+	</div>
+
+	<div class="actividades">
+		<h2>Activities</h2>
+		<div class="actividades-grid">
+
+			<div class="actividades-grid-item" onclick="window.location.href = '../planets/saturn.html'">
+				<div class="foto" style="background-image: url('../img/mars/olimpus.png');"></div>
+				<h3>Visit Mount Olympus</h3>
+                <p3>Olympus Mons (translated from Latin to Spanish as "Mount Olympus") is a shield volcano located on the planet Mars . 
+					With a height of more than 21.9 km (13.6 mi) as measured by the Mars Orbiter Laser Altimeter (MOLA),
+					 it is the largest mountain on Mars and the largest in the entire solar system
+                    </p3>
+			</div>
+
+			<div class="actividades-grid-item" onclick="window.location.href = '../planets/KiteSnowing.html'">
+				<div class="foto" style="background-image: url('../img/mars/poles.jpg');"></div>
+				<h3>North and South Poles</h3>
+                <p3>Ice collects in the polar regions because Mars' rotation axis tilts about 25° to its orbit around the Sun. 
+					This gives Mars four distinct seasons, similar to those on Earth. But polar winters on Mars are much colder
+					 (–153° Celsius or –243° Fahrenheit) than the coldest winters on Earth.
+                    </p3>
+			</div>
+
+            <div class="actividades-grid-item" onclick="window.location.href = '../planets/KiteSnowing.html'">
+				<div class="foto" style="background-image: url('../img/mars/buggy.jpg"></div>
+				<h3>Ride on gale crater</h3>
+                <p3>Gale is a crater and probable dry lake. Gale is roughly the size of Connecticut and Rhode Island.<br>
+					<b>Drive Around!</b>
+                </p3>
+			</div>
+
+		</div>
+	</div>
+
+    <div class="tips">
+		<h2>Tips for your trip to Mars</h2>
+		<div class="tips-grid">
+
+			<div class="tips-grid-item">
+				<div class="foto" style="background-image: url('../img/neptune/tips/Cloth.png');"></div>
+				<h3>Personal equipment</h3>
+                <p3>A:Space Suit<br>
+                    B. Technical undergarments (for temperature regulation) <br>
+                    C. Space boots <br>
+                    D. Spare clothing (in case of emergencies) <br>
+                    E. Sunglasses (to protect against solar radiation)<br>
+                    </p3>
+			</div>
+
+			<div class="tips-grid-item">
+				<div class="foto" style="background-image: url('../img/neptune/tips/Food.png');"></div>
+				<h3>Food and Water Supplies</h3>
+                <p3>A. Packaged and dehydrated space food<br>
+                    B. Beverages in specialized containers (water, juices, etc.) <br>
+                    C. Space food utensils (cutlery, plates, etc.)<br> 
+                    D. Water purification system (for recycling)<br>
+                </p3>
+			</div>
+
+            <div class="tips-grid-item">
+				<div class="foto" style="background-image: url('../img/neptune/tips/Med.png');"></div>
+				<h3>Medical Supplies</h3>
+                <p3>A. First aid kit<br>
+                    B. Personal medications (if necessary)<br>
+                    C. Basic medical equipment (thermometer, bandages, etc.)<br>
+                </p3>
+			</div>
+
+            <div class="tips-grid-item">
+				<div class="foto" style="background-image: url('../img/neptune/tips/Travel.png');"></div>
+				<h3>Travel between planet</h3>
+                <p3>Read about eliptical orbits, the new way of fast traveling<br>
+                </p3>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

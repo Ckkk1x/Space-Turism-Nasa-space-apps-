@@ -1,0 +1,88 @@
+header{
+	background-color: #145dca;
+	height: 100px;
+	width: 100%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	z-index: 1000;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo{
+	float: left;
+	height: 70px;
+	margin-left: 100px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#logo-text{
+	float: left;
+	margin-left: 10px;
+	margin-top: 30px;
+	color: #fff;
+	font-size: 30px;
+}
+
+/* DROPDOWN */
+.user-dropdown {
+	float: right;
+	padding: 25px 50px 0 0;
+}
+
+.user-dropdown #profile{
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	right: 50px;
+	top: 70px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+	cursor: pointer;
+}
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.log-in {
+	float: right;
+	padding: 25px 50px 0 0;
+	font-size: 20px;
+	color: #fff;
+	padding-top: 30px;
+}
+
+.log-in a{
+	color: #36a5ff;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 0px 5px;
+}
+
+.log-in a:hover{
+	text-decoration: underline;
+}
